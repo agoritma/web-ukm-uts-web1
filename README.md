@@ -1,2 +1,2 @@
-# web-ukm-uts-web1
-a Website intended for midterm exams, without libraries or frameworks. Pure vanilla html and css
+# Website UKM
+This is just a website for midterm exams, without any library or framework just vanilla HTML and CSS
