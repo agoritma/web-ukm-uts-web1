@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic', sans-serif;
+
+    --primary-color: #201f1e;
+    --secondary-color: #f4ede5;
+    --accent-color: #E05452;
+    --darker-accent-color: #c23d3b;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: var(--secondary-color);
+}
+
+button {
+    font-size: 1rem;
+}
+
+p {
+    line-height: 1.5rem;
+    font-kerning: auto;
+}
+
+.text-white {
+    color: var(--secondary-color) !important;
+}
+
+.text-black {
+    color: var(--primary-color) !important;
+}
+
+.link {
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.link::after {
+    display: block;
+    content:  "";
+    border-bottom: 1px var(--secondary-color) solid;
+    position: relative;
+    left: -90px;
+    transition: left .3s ease-in-out;
+    -webkit-transition: left .3s ease-in-out;
+    -moz-transition: left .3s ease-in-out;
+    -ms-transition: left .3s ease-in-out;
+    -o-transition: left .3s ease-in-out;
+}
+
+.link:hover::after {
+    left: 0;
+}
+
+.btn-dark {
+    --secondary-color: #2F2E2D !important;
+    --primary-color: #f4ede5 !important;
+}
+
+.btn-solid {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--secondary-color);
+    padding: .8rem 1rem;
+    border: solid var(--secondary-color) 1px;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.btn-solid:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    padding: .8rem 1rem;
+    border: solid var(--primary-color) 1px;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--darker-accent-color);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: max-content;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    margin-right: -5rem;
+}
+
+main {
+    padding: 0 9rem;
+    width: 100%;
+    position: relative;
+}
+
+#main {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    min-height: 750px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+h1{
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40%;
+}
+
+.banner img {
+    width: 36rem;
+}
+
+.cta a:last-child {
+    margin-left: 1rem;
+}
+
+#ukm {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    max-height: 1200px;
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ukm h1 {
+    margin-top: 2rem;
+}
+
+#ukm p{
+    width: 60%;
+    text-align: center;
+}
+
+.list-ukm {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.list-ukm img {
+    width: 90%;
+}
+
+.list-ukm p {
+    width: 100% !important;
+}
+
+.list-ukm .card {
+    padding: 1.5rem;
+    position: relative;
+    border: 1px black solid;
+    width: 18%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.list-ukm .card:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: max-content;
+    padding: 1rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+footer div:nth-of-type(2) {
+    width: max-content;
+    margin-right: -7rem;
+}
+
+svg {
+    height: 1.3rem;
+    fill: var(--secondary-color);
+}
+
+.sosmed {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+
+.sosmed a {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+}
+
+.sosmed a svg {
+    margin: auto;
+}
+
+.sosmed a:hover>svg {
+    fill: var(--accent-color);
+}
+
+#profile {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: max-content;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#profile ol, #profile ul {
+    margin-left: 2.5rem;
+    padding-left: 0;
+}
+
+#profile h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#profile div {
+    width: 55%;
+    min-width: 700px;
+    margin: auto auto;
+}
+
+#profile h3 {
+    margin-top: 2rem;
+    margin-bottom: .8rem;
+}
+
+#profile ol {
+    font-weight: bold;
+}
+
+#profile li p {
+    font-weight: normal;
+}
+
+#form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    min-height: 750px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+#form h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#form form{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#form div input[type="text"] {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 3rem;
+    padding: 0 1rem;
+    border: 1px var(--primary-color) solid;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    font-size: 1rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flex div {
+    width: 47%;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    margin-right: 1rem;
+}
+
+select {
+    font-size: 1rem;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--secondary-color);
+    border: 1px var(--primary-color) solid;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    padding: 0 1rem;
+}
+
+#kontak {
+    width: 100%;
+    height: 90vh;
+    min-height: 700px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#kontak h1 {
+    margin-bottom: 2rem;
+}
+
+#kontak div {
+    width: 55%;
+    min-width: 700px;
+}
+
+#kontak div.sosmed {
+    width: 30%;
+    min-width: unset;
+}
+
+#kontak .sosmed a svg {
+    fill: var(--primary-color);
+}
+
+#kontak .sosmed a:hover>svg {
+    fill: var(--accent-color);
+}
+
+#kontak div ul {
+    padding-left: 2rem;
+}
+
+#galeri {
+    width: 100%;
+    height: max-content;
+    min-height: 700px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#galeri h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#galeri p {
+    text-align: justify;
+}
+
+#galeri div {
+    position: relative;
+    width: 55%;
+}
+
+#galeri .galeri {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#galeri div img{
+    width: 50%;
+}
+
+#galeri div iframe {
+    width: 50%;
+    height: 100vh;
+    max-height: 296px;
+}
